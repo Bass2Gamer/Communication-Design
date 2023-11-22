@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1: Historical stats.</title>
+    <link href="storystyle.css" rel="stylesheet" media="all">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div id="changingBg">
+        <header>
+            <div>
+                <h1>CS:GO Cheaters</h1>
+                <a href="#intro">Introduction</a>
+                <a href="#hacksExplain">Hacks</a>
+                <a href="#current">Current</a>
+                <a href="#future">Future</a>
+            </div>
+        </header>
+
+        <section id="intro" class="scrollContainer">
+            <div class="scrollText">
+            <h2>Introduction</h2>
+            <p>Since the beginning of
+                Counter Strike in 1999
+                cheating was a problem
+                that stayed to this day.
+            </p> <p>
+                The first mentions of
+                cheating date back to
+                2000 when the Counter
+                Strike was released. They
+                consisted of “trainers”
+                which were mod menus
+                that gave you control over
+                an in game commands
+                such as god mode,
+                unlimited ammo and so
+                forth.</p>
+
+            </div>
+        </section>
+
+
+        <section id="hacksExplain" class="scrollContainer">
+            <div class="scrollText alignLeft">
+                <h2>Hacks</h2>
+                <p>The first software cheats
+                    appeared in game before 2001,
+                    the recorded mention about
+                    cheats can be traced back to
+                    September of 2001.types
+                    of cheats consisted of aimbot,
+                    and wallhacks.
+                </p>
+            </div>
+               
+        </section>
+
+        <section id="current" class="scrollContainer">
+            <div class="scrollText">
+                <h2>Current Situation</h2>
+            <p>The cheats were so prevalent you even couldn`t escape
+                them in professional tournaments. And thanks to growing
+                popularity of CS:GO most of the cheaters from CS 1.6 came
+                to CS:GO. 
+                
+                Even the fact of losing an in game inventory did not scare
+                cheaters, but many Counter Strike players knew that VAC
+                was not very effective at banning players swiftly, however
+                the anti-cheat was updated frequently and with help of
+                Overwatch system it became more consistent.
+                
+                The consequence of this are banned accounts and with them
+                locked in game inventory, that can never be accessed by the
+                banned account, which also means that players banned by
+                VAC can not sell their inventory items on Steam Market.</p>
+                <iframe title="List of banned pro players by Valve" aria-label="Table" id="datawrapper-chart-B5734" src="https://datawrapper.dwcdn.net/B5734/1/" scrolling="no" frameborder="0" style="border: none;" width="674" height="901" data-external="1"></iframe>
+            </div>
+            </section>
+
+        <section  id="section" class="scrollContainer">
+            <div class="scrollText">
+                <h2>Future</h2>
+            <p>In future, Valve will release VAC-NET a deep learning
+                solution that will identify cheater in real time. However
+                Valve did not revealed any details regarding this topic, but
+                the future of Counter Strike looks bright despite few
+                stumbles along the way.</p>
+
+                
+            <img src="latest.png">
+            </div>
+
+        </section>
+
+        <script>
+
+
+            // Function to check if element is in viewport
+            function isInViewport(el) {
+                const rect = el.getBoundingClientRect();
+                return (
+                    // Improved check of viewport for elements exceeding viewport height
+                    (rect.top <= 0 && rect.bottom >= 0) ||
+                    (rect.top >= 0 && rect.left >= 0 &&
+                        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                        rect.right <= (window.innerWidth || document.documentElement.clientWidth))
+                );
+            }
+
+            // Make a check when page scrolls
+            document.addEventListener('scroll', function () {
+                // Change background based on which section is in viewport
+                if (isInViewport(document.getElementById("intro"))) {
+                    document.getElementById("changingBg").style.backgroundImage = "url('EI2dOtIXYAMPuFR.jpg')";
+                }
+                if (isInViewport(document.getElementById("hacksExplain"))) {
+                    document.getElementById("changingBg").style.backgroundImage = "url('1617313929_cs-hack-free.jpg')";
+                }
+                if (isInViewport(document.getElementById("current"))) {
+                    document.getElementById("changingBg").style.backgroundImage = "url('fb_image.png')";
+                }
+            }, {
+                passive: true
+            });
+        </script>
+
+    </div>
+</body>
+
+</html>

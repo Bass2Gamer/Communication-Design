@@ -30,7 +30,7 @@ h1 {
     transition: background-image 2s;
 }
 
-.scrollText {
+.scrollText { 
     margin: 50vh auto;
     max-width: 50rem;
     padding: 1rem;
