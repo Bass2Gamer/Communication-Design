@@ -13,7 +13,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("friend_graph.png");
+    background-image: url("img/friend_graph.png");
     background-size: cover;
     background-position: center;
 

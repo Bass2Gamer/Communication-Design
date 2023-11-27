@@ -97,10 +97,10 @@
                 </script>
             </div>
             <div class="scrollElement">
-                <img class="img" src="friend_graph.png">
+                <img class="img" src="img/friend_graph.png">
             </div>
             <div class="scrollElement">
-                <img class="img" src="table.png">
+                <img class="img" src="img/table.png">
             </div>
         </section>
 
@@ -123,10 +123,10 @@
             document.addEventListener('scroll', function () {
                 // Change background based on which section is in viewport
                 if (isInViewport(document.getElementById("intro"))) {
-                    document.getElementById("changingBg").style.backgroundImage = "url('gaming.jpeg')";
+                    document.getElementById("changingBg").style.backgroundImage = "url('img/gaming.jpeg')";
                 }
                 if (isInViewport(document.getElementById("league"))) {
-                    document.getElementById("changingBg").style.backgroundImage = "url('league.jpg')";
+                    document.getElementById("changingBg").style.backgroundImage = "url('img/league.jpg')";
                 }
             }, {
                 passive: true

@@ -13,7 +13,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("counter_strike_go.png");
+    background-image: url("img/counter_strike_go.png");
     background-size: cover;
     background-position: top left;
 }
