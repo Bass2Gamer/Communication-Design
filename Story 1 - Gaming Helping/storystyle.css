@@ -13,9 +13,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("counter_strike_go.png");
+    background-image: url("friend_graph.png");
     background-size: cover;
-    background-position: top left;
+    background-position: center;
+
 }
 
 header a {
@@ -31,13 +32,13 @@ h1 {
 .scrollContainer {
     width: 100%;
     overflow-x: scroll;
-    display: block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     min-height: 100vh;
     overflow: hidden;
     transition: background-image 2s;
-    
 }
 
 .scrollText {
@@ -53,12 +54,12 @@ h1 {
 .scrollElement {
     margin: 50vh auto;
     padding: 1rem;
+    max-width: 50rem;
     background: rgba(255, 255, 255, 0.9);
     color: #000;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 10px;
     display: inline-block;
-    margin: 25vh auto;
 }
 
 
@@ -81,18 +82,13 @@ h1 {
     margin: 0 0 1rem 1rem;
 }
 
-#section img {
-    width: 90%;
+.img {
+    width: 100%;
     height: auto; 
     display: block;
     margin: auto;
 }
 
-#hacksExplain {
-    display: flex;
-    align-items: center;
-    /* other styles... */
-}
 
 #changingBg {
     background-size: cover;
@@ -104,11 +100,6 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-#hacksExplain {
-    margin-top: auto;
-    margin-bottom: auto;
 }
 
 #current {
