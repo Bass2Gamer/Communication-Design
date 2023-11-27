@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formula 1: Historical stats.</title>
+    <title>CS:GO Cheaters</title>
     <link href="storystyle.css" rel="stylesheet" media="all">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -78,9 +78,16 @@
                 locked in game inventory, that can never be accessed by the
                 banned account, which also means that players banned by
                 VAC can not sell their inventory items on Steam Market.</p>
-                <iframe title="List of banned pro players by Valve" aria-label="Table" id="datawrapper-chart-B5734" src="https://datawrapper.dwcdn.net/B5734/1/" scrolling="no" frameborder="0" style="border: none;" width="674" height="901" data-external="1"></iframe>
+
             </div>
-            </section>
+
+            <div class="scrollElement">
+                <iframe title="List of banned pro players by Valve" aria-label="Table" id="datawrapper-chart-B5734" src="https://datawrapper.dwcdn.net/B5734/1/" scrolling="no" frameborder="0" style="border: none;" width="600" height="900" data-external="1"></iframe>
+            </div>
+            <div class="scrollElement">
+            <iframe title="Area Chart of Bans and In-Game game inventory value lost" aria-label="Interactive area chart" id="datawrapper-chart-hh9aP" src="https://datawrapper.dwcdn.net/hh9aP/2/" scrolling="no" frameborder="0" style="border: none;" width="600" height="900" data-external="1"></iframe>
+        </div>
+        </section>
 
         <section  id="section" class="scrollContainer">
             <div class="scrollText">
@@ -92,7 +99,8 @@
                 stumbles along the way.</p>
 
                 
-            <img src="latest.png">
+            <img src="overwatch_report.png">
+
             </div>
 
         </section>
@@ -116,13 +124,13 @@
             document.addEventListener('scroll', function () {
                 // Change background based on which section is in viewport
                 if (isInViewport(document.getElementById("intro"))) {
-                    document.getElementById("changingBg").style.backgroundImage = "url('EI2dOtIXYAMPuFR.jpg')";
+                    document.getElementById("changingBg").style.backgroundImage = "url('counter_strike.jpg')";
                 }
                 if (isInViewport(document.getElementById("hacksExplain"))) {
-                    document.getElementById("changingBg").style.backgroundImage = "url('1617313929_cs-hack-free.jpg')";
+                    document.getElementById("changingBg").style.backgroundImage = "url('cheats.jpg')";
                 }
                 if (isInViewport(document.getElementById("current"))) {
-                    document.getElementById("changingBg").style.backgroundImage = "url('fb_image.png')";
+                    document.getElementById("changingBg").style.backgroundImage = "url('counter_strike_go.png')";
                 }
             }, {
                 passive: true
